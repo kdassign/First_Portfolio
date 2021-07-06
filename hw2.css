@@ -1,0 +1,17 @@
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: inherit;
+    background-color: #b08968;
+}
+
+a { display: block;
+    padding: 4px;
+    line-height: 8px;
+    background-color: #7f5539;
+}
