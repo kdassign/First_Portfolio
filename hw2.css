@@ -6,12 +6,38 @@
 }
 
 body {
-    font-family: inherit;
+    font-family: 'Times New Roman';
     background-color: #b08968;
+}
+
+header {
+    padding: 15px;
+    text-align: center;  
+    font-size: 25px;
+}
+h1 {
+    color:#EDE0D4
+}
+.navv {
+    padding:15px;
+    background-color: #EDE0D4;
+    opacity: 40%;
+    text-align: center;
+}
+
+.navv:hover {
+    background-color:#EDE0D4;
+    opacity:90%;
 }
 
 a { display: block;
     padding: 4px;
     line-height: 8px;
-    background-color: #7f5539;
+    display: inline-flex;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact h4 {
+    text-align: center;
 }
