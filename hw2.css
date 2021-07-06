@@ -5,11 +5,6 @@
 	margin: 0;
 }
 
-body {
-    font-family: 'Times New Roman';
-    background-color: #b08968;
-}
-
 header {
     padding: 15px;
     text-align: center;  
@@ -21,13 +16,29 @@ h1 {
 .navv {
     padding:15px;
     background-color: #EDE0D4;
-    opacity: 40%;
+    transition: opacity 0.5s ease;
+    opacity: 60%;
     text-align: center;
 }
 
-.navv:hover {
+.navv:hover,
+.about:hover,
+.work:hover {
     background-color:#EDE0D4;
     opacity:90%;
+}
+
+body {
+    font-family: 'Aparajita';
+    background-color: #b08968;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 a { display: block;
@@ -37,7 +48,44 @@ a { display: block;
     text-align: center;
     text-decoration: none;
 }
+.me {
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding:50px;
+    width: 450px;
+    background-color: #7f5539;
+    opacity: 90%;
+}
+
+.about,
+.work {
+    background-color: #EDE0D4;
+    opacity:60%;
+    transition: opacity 0.5s ease;
+    padding:50px;
+    width: 70%;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    color: #7f5539;
+    font-size: 40px;
+    padding: 10px;
+}
+.about p {
+    color: #7f5539;
+}
 
 .contact h4 {
     text-align: center;
+}
+
+.contact ul {
+    text-align: center;
+}
+
+.card1 {
+    float: left;
+
 }
