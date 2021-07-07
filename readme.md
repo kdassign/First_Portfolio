@@ -13,13 +13,13 @@ Below I will show some CSS and HTML examples of code from this project.
 HTML:
 
 This section displayed an image of me, resized.
-        <section class="me">
+        section class="me"
              <!-- Image of me linked below with width and height changed to fit the structure of the page-->
             <img src="https://i.imgur.com/aAGJtSS.png" alt="Picture of me " width="300px" height="450px">
-        </section>
+        /section
 
-This section was for deploying the application through images in "My Work"
-        <section class="work">
+This section was for deploying the application through images in "My Work" 
+        section class="work"
                     <div id="my-work">
                         <h2>My Work</h2>
                         <section class="card1">
@@ -41,7 +41,7 @@ This section was for deploying the application through images in "My Work"
                                     alt="ocean" width=150px height=150px></a>
                             <h3>First Day Repo</h3>
                     </div>
-            </section>
+            /section
 
 CSS:
 This is an example of how to use the hover attribute in order to make an element fade in and fade out
