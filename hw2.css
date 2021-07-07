@@ -9,10 +9,12 @@ header {
     padding: 15px;
     text-align: center;  
     font-size: 25px;
+    letter-spacing: 5px;
 }
 h1 {
-    color:#EDE0D4
-}
+    color:#EDE0D4;
+   }
+  
 .navv {
     padding:15px;
     background-color: #EDE0D4;
@@ -31,6 +33,7 @@ h1 {
 body {
     font-family: 'Aparajita';
     background-color: #b08968;
+    color:#7f5539;
 }
 
 main {
@@ -41,8 +44,7 @@ main {
     justify-content: center;
 }
 
-a { display: block;
-    padding: 4px;
+a { padding: 4px;
     line-height: 8px;
     display: inline-flex;
     text-align: center;
@@ -52,7 +54,7 @@ a { display: block;
     margin-top: 20px;
     margin-bottom:20px;
     padding:50px;
-    width: 450px;
+    width: 400px;
     background-color: #7f5539;
     opacity: 90%;
 }
@@ -64,28 +66,42 @@ a { display: block;
     transition: opacity 0.5s ease;
     padding:50px;
     width: 70%;
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    min-width: 400px;
+
+    text-align: center;
 }
 
-.about h2 {
-    color: #7f5539;
+.about h2,
+.work h2 {
     font-size: 40px;
     padding: 10px;
-}
-.about p {
-    color: #7f5539;
-}
-
-.contact h4 {
-    text-align: center;
-}
-
-.contact ul {
-    text-align: center;
 }
 
 .card1 {
     float: left;
+    flex: 1 0 900px;
+    max-width: 400px;
+    padding: 40px;
+}
+.card2,
+.card3 {
+    float:right;
+    flex: 1 0 900px;
+    max-width: 400px;
+    padding: 40px;
+}
 
+.card2 h2,
+.card3 h2 {
+    font-size: 30px;
+}
+
+.contact h4 {
+    text-align: inline;
+}
+
+.contact p {
+    text-align: inline;
 }
