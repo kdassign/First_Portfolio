@@ -1,107 +1,132 @@
-
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
+
+/*This is the top of the page where my name is*/
+
 header {
-    padding: 15px;
-    text-align: center;  
-    font-size: 25px;
-    letter-spacing: 5px;
+	padding: 15px;
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: 5px;
 }
+
+
+/*Font color for my name in the header*/
+
 h1 {
-    color:#EDE0D4;
-   }
-  
-.navv {
-    padding:15px;
-    background-color: #EDE0D4;
-    transition: opacity 0.5s ease;
-    opacity: 60%;
-    text-align: center;
+	color: #EDE0D4;
 }
+
+
+/*Navigation bar below header where my name is, used transition attribute to fade the navigation bar in and out*/
+
+.navv {
+	padding: 15px;
+	background-color: #EDE0D4;
+	transition: opacity 0.5s ease;
+	opacity: 60%;
+	text-align: center;
+}
+
+
+/*When the mouse moves or hovers over these elements it will fade the color back in, when the mouse moves off it'll fade back out*/
 
 .navv:hover,
 .about:hover,
 .work:hover {
-    background-color:#EDE0D4;
-    opacity:90%;
+	background-color: #EDE0D4;
+	opacity: 90%;
 }
 
 body {
-    font-family: 'Aparajita';
-    background-color: #b08968;
-    color:#7f5539;
+	font-family: 'Aparajita';
+	background-color: #b08968;
+	color: #7f5539;
 }
+
+
+/* The flex property helps for elements on the page to essentially bend to its window size so the position of the elements will change. This only works on flexible items.
+This is extremely essential when it comes to compatibility (i.e. IPhone, Desktop, etc.)*/
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-a { padding: 4px;
-    line-height: 8px;
-    display: inline-flex;
-    text-align: center;
-    text-decoration: none;
+
+/* Used for links*/
+
+a {
+	padding: 4px;
+	line-height: 8px;
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
 }
+
+
+/* This is the class for the picture of me. */
+
 .me {
-    margin-top: 20px;
-    margin-bottom:20px;
-    padding:50px;
-    width: 400px;
-    background-color: #7f5539;
-    opacity: 90%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 50px;
+	width: 400px;
+	background-color: #7f5539;
+	opacity: 90%;
 }
+
+
+/* Classes for about me and my work. These are the transparent objects*/
 
 .about,
 .work {
-    background-color: #EDE0D4;
-    opacity:60%;
-    transition: opacity 0.5s ease;
-    padding:50px;
-    width: 70%;
-    margin-top:40px;
-    margin-bottom: 40px;
-    min-width: 400px;
-
-    text-align: center;
+	background-color: #EDE0D4;
+	opacity: 60%;
+	transition: opacity 0.5s ease;
+	padding: 50px;
+	width: 70%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	min-width: 400px;
+	text-align: center;
 }
 
 .about h2,
 .work h2 {
-    font-size: 40px;
-    padding: 10px;
+	font-size: 40px;
+	padding: 10px;
 }
 
+
+/* Classes .card1,.card2,.card3 are the images used as links to deployed applications in my work, use flex property to get them to change depending on the screens compatibility*/
+
 .card1 {
-    float: left;
-    flex: 1 0 900px;
-    max-width: 400px;
-    padding: 40px;
+	float: left;
+	flex: 1 0 900px;
+	max-width: 400px;
+	padding: 40px;
 }
+
+
+/*Float right or left helps to position elements to the right of its container*/
+
 .card2,
 .card3 {
-    float:right;
-    flex: 1 0 900px;
-    max-width: 400px;
-    padding: 40px;
+	float: right;
+	flex: 1 0 900px;
+	max-width: 400px;
+	padding: 40px;
 }
 
 .card2 h2,
 .card3 h2 {
-    font-size: 30px;
-}
-
-.contact h4 {
-    text-align: inline;
-}
-
-.contact p {
-    text-align: inline;
+	font-size: 30px;
 }
